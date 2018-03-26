@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Editing</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="profile-header">
+
+        <div class="profile-shadow"></div>
+        <h1 class="user-name">Emma Henderson</h1>
+        <img src="assets/images/pp/EmmaHenderson.jpg" alt="profile-pic">
+
+    </div>
+
+    <div class="profile-section">
+        
+        <label id="name-label" for="username">NAME</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label id="group-label" for="bloodgroup">BLOOD GROUP</label><br>
+        <select name="bloodgroup" id="bloodgroup">
+            <option value="">Sélectionnez le groupe sanguin ...</option>
+            <option value="apositif">Groupe A+</option>
+            <option value="anegatif">Groupe A-</option>
+            <option value="bpositif">Groupe B+</option>
+            <option value="bnegatif">Groupe B-</option>
+            <option value="o">Groupe O</option>
+        </select><br>
+
+        <label for="user-phone">PHONE</label><br>
+        <input type="tel" id="user-phone" maxlength="9" name="phone"><br>
+
+        <label for="user-password">PASSWORD</label><br>
+        <input type="password" id="user-password" name="password"><br>
+
+        <button type="button" class="save-btn">SAVE</button>
+
+    </div>
+
+</body>
+
+</html>

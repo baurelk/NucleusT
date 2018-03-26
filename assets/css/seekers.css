@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+* {
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+}
+
+body {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+section#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+section#main div.register-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: url('../images/donors_bg2.jpg') center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+section#main div.register-box:nth-child(1n) {
+    z-index: 1;
+}
+
+section#main div.register-box a,
+section#main div.register-box a:link,
+section#main div.register-box a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+section#main div.register-box h2 {
+    margin-top: 18%;
+    margin-bottom: 5%;
+    margin-left: 12%;
+    font-size: 15px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-weight: 400;
+}
+
+section#main div.register-box p {
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 30px;
+    margin-left: 12%;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+section#main div.register-box button.register-btn {
+    margin-left: 12%;
+    margin-top: 6%;
+    padding: 12px;
+    width: 25%;
+    font-size: 13px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    transition: all .3s;
+}
+
+section#main div.register-box button.register-btn:hover {
+    border-color: #D13B3B;
+    background: #D13B3B;
+    transition: all .3s;
+}
+
+section#main div.register-box div.links {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: row;
+}
+
+section#main div.register-box div.links a,
+section#main div.register-box div.links a:link,
+section#main div.register-box div.links a:default,
+section#main div.register-box div.links a:visited {
+    text-decoration: none;
+    color: #F15050;
+    margin: 10px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 15px;
+}
+
+section#main div.register-box div.links a:hover {
+    color: #D13B3B;
+}
+
+section#main div.register-box div.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+section#main div.middle-separator {
+    width: 1px;
+    background: #ddd;
+    height: 50%;
+    align-self: center;
+}
+
+section#main div.login-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15% 2%;
+}
+
+section#main div.login-box form.login-form label {
+    color: #999;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 2%;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+}
+
+section#main div.login-box form.login-form {
+    margin-left: 10%;
+    margin-right: 14%;
+}
+
+section#main div.login-box form.login-form input {
+    background: whitesmoke;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0 5px 0;
+    margin: 10px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    transition: border .1s;
+}
+
+section#main div.login-box form.login-form input#user-phone,
+section#main div.login-box form.login-form input#username,
+section#main div.login-box form.login-form select#bloodgroup {
+    margin-bottom: 30px;
+}
+
+section#main div.login-box form.login-form input:focus {
+    border-bottom: solid 2px #222;
+    transition: border 0.1s;
+}
+
+section#main div.login-box form.login-form a,
+section#main div.login-box form.login-form a:default,
+section#main div.login-box form.login-form a:link,
+section#main div.login-box form.login-form a:visited {
+    color: #888;
+    font-size: 14px;
+}
+
+section#main div.login-box form.login-form a:hover {
+    color: #444;
+}
+
+section#main div.login-box form.login-form button {
+    margin: 10% 4% 0 2%;
+    padding: 10px;
+    width: 30%;
+    color: #333;
+    background: whitesmoke;
+    border: solid 1px #333;
+    border-radius: 50px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+section#main div.login-box form.login-form button:hover {
+    background: #D13B3B;
+    color: whitesmoke;
+    border-color: #D13B3B;
+    transition: all .3s;
+}
+
+section#main div.login-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15% 2%;
+}
+
+section#main div.login-box form.login-form label {
+    color: #999;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 2%;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+}
+
+section#main div.login-box form.login-form {
+    margin-left: 10%;
+    margin-right: 14%;
+}
+
+section#main div.login-box form.login-form input,
+section#main div.login-box form.login-form select {
+    background: whitesmoke;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0 5px 0;
+    margin: 10px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    transition: border .1s;
+}
+
+section#main div.login-box form.login-form input#username {
+    margin-bottom: 30px;
+}
+
+section#main div.login-box form.login-form input:focus {
+    border-bottom: solid 2px #222;
+    transition: border 0.1s;
+}
+
+section#main div.login-box form.login-form a,
+section#main div.login-box form.login-form a:default,
+section#main div.login-box form.login-form a:link,
+section#main div.login-box form.login-form a:visited {
+    color: #888;
+    font-size: 14px;
+}
+
+section#main div.login-box form.login-form a:hover {
+    color: #444;
+}
+
+section#main div.login-box form.login-form button {
+    margin: 10% 4% 0 2%;
+    padding: 10px;
+    width: 30%;
+    color: #333;
+    background: whitesmoke;
+    border: solid 1px #333;
+    border-radius: 50px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+section#main div.login-box form.login-form button:hover {
+    background: #D13B3B;
+    color: whitesmoke;
+    border-color: #D13B3B;
+    transition: all .3s;
+}
+
+section#menu {
+    background: #13181D;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section#menu img {
+    height: 32px;
+}
+
+section#menu img.back-button {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+
+section#menu img.menu-logo {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+}
+
+section#menu div.menu-items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+section#menu div.menu-items a,
+section#menu div.menu-items a:active,
+section#menu div.menu-items a:link,
+section#menu div.menu-items a:default,
+section#menu div.menu-items a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+section#menu div.menu-items a:hover {
+    color: #ccc;
+}
+
+section#menu p.copy {
+    text-align: center;
+    color: white;
+}
+
+section#menu p.copy a:link,
+section#menu p.copy a:default,
+section#menu p.copy a:visited {
+    text-decoration: none;
+    color: #aaa;
+}
+
+section#menu p.copy a:hover {
+    color: whitesmoke;
+}

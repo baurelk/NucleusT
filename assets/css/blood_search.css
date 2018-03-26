@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+div.user-menu {
+    background: white;
+    border: solid 1px #ddd;
+    min-width: 15%;
+    position: absolute;
+    top: 4.5%;
+    left: 7%;
+    display: none;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+div.user-menu span {
+    padding: 10px;
+}
+
+div.user-menu div.separator {
+    height: 1px;
+    background: whitesmoke;
+    /* margin: 5px 0 5px 0; */
+    width: 100%;
+}
+
+div.user-menu a,
+div.user-menu a:link,
+div.user-menu a:visited,
+div.user-menu a:active,
+div.user-menu a:default {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 10px 10px 10px;
+    transition: all 0.3s;
+}
+
+div.user-menu a:hover {
+    background: whitesmoke;
+    transition: all 0.3s;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 3% 0 3%;
+}
+
+header nav a img {
+    height: 32px;
+}
+
+section.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 90%;
+    /* justify-content: center;
+    text-align: center; */
+    align-content: center;
+}
+
+section.main * {
+    align-self: center;
+    margin: 20px 20px;
+}
+
+section.main div.search-type input[type="radio"] {
+    margin: 0;
+}
+
+section.main div.search-type label {
+    margin-left: 10px;
+}
+
+section.main h1 {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;    
+    font-size: 48px;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+section.main div#separator {
+    height: 1px;
+    width: 10%;
+    background: #333;
+    margin-bottom: 30px;
+}
+
+section.main select {
+    height: 40px;
+    width: 30%;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    background: transparent;
+}
+
+section.main button {
+    padding: 12px;
+    width: 10%;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: solid 1px #222;
+    border-radius: 50px;
+    background: transparent;
+    transition: all 0.3s;    
+}
+
+section.main button:hover {
+    background: #D13B3B;
+    border-color: #D13B3B;
+    color: white;
+    transition: all 0.3s;
+}

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+* {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+body {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+div.profile-header {
+    flex: 1;
+    background: url('../images/donors_bg2.jpg') center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+div.profile-header div.profile-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    height: 33.1%;
+    width: 100%;
+    z-index: 0;
+}
+
+div.profile-header h1.user-name {
+    font-weight: lighter;
+    position: absolute;
+}
+
+div.profile-header img {
+    width: 128px;
+    border-radius: 500px;
+    position: absolute;
+    top: 26.5%;
+}
+
+div.profile-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.profile-section label {
+    color: #999;
+    width: 50%;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+}
+
+div.profile-section input, div.profile-section select {
+    background: whitesmoke;
+    width: 50%;
+    font-size: 15px;
+    padding: 10px 0 5px 0;
+    margin: 0 10px 10px 10px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    transition: border .1s;
+}
+
+div.profile-section button {
+    margin-top: 1%;
+    padding: 10px;
+    width: 10%;
+    color: #333;
+    background: whitesmoke;
+    border: solid 1px #333;
+    border-radius: 50px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+div.profile-section button:hover {
+    background: #D13B3B;
+    color: whitesmoke;
+    border-color: #D13B3B;
+    transition: all .3s;
+}

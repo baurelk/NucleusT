@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+* {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* perspective: 1px;
+    height: 100vh; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: -100;
+    /* transform: translateZ(-30px) scale(2); */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 3% 0 3%;
+}
+
+header nav a img {
+    height: 32px;
+}
+
+header nav a img#logo {
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+}
+
+div#shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #000, #555);
+    opacity: .7;
+    z-index: -1;
+    height: 100%;
+}
+
+section#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+    flex: 1;
+    text-align: center;
+    transform: translateZ(0);
+}
+
+section#main div.content {
+    align-self: center;
+}
+
+section#main h1 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+section#main #border {
+    height: 1px;
+    background: whitesmoke;
+    width: 10%;
+    position: relative;
+    left: 45%;
+    margin-bottom: 20px;
+}
+
+section#main p {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    line-height: 30px;
+    margin: 40px 100px;
+    font-size: 14px;
+    letter-spacing: .8px;
+    font-weight:lighter;
+}
+
+section#main button {
+    border: solid 1px #ddd;
+    background: transparent;
+    color: whitesmoke;
+    padding: 10px 50px;
+    margin: 5px 5px;
+    font-size: 14px;
+    border-radius: 50px;
+    transition: all .4s;
+}
+
+section#main button:hover {
+    background: #D13B3B;
+    border-color: #D13B3B;
+    color: whitesmoke;
+    transition: all .4s;
+}
+
+/* Tips */
+
+section#tips {
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+
+/* Testimonies */
+
+section#testimonies {
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section#testimonies div.testimony {
+    margin: 0 80px 30px 80px;
+}
+
+section#testimonies div.testimony img {
+    float: left;
+    border: solid 1px #ccc;
+    border-radius: 500px;
+    height: 96px;
+    margin-right: 30px;
+    margin-top: .8%;
+}
+
+section#testimonies div.testimony h4.name {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 14px;
+}
+
+section#testimonies div.testimony#testimony2 h4.name,
+section#testimonies div.testimony#testimony2 p
+{
+    text-align: right;
+}
+
+section#testimonies div.testimony p {
+    line-height: 24px;
+}
+
+section#testimonies div.testimony#testimony2 img {
+    float: right;
+    margin-right: 0;    
+    margin-left: 30px;    
+}
+
+section#testimonies h1.section-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 2%;
+    color: #777;
+}
+
+section#testimonies div#border {
+    height: 2px;
+    background: #777;
+    margin-bottom: 3%;
+    width: 10%;
+    position: relative;
+    left: 44.8%;
+}
+
+/* Menu */
+
+section#menu {
+    background: #13181D;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+section#menu img {
+    height: 32px;
+}
+
+section#menu img.back-button {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+
+section#menu img.menu-logo {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+}
+
+section#menu div.menu-items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+section#menu div.menu-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+section#menu div.menu-items a:hover {
+    color: #ccc;
+}
+
+section#menu div.menu-items a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+section#menu div.menu-items a:footer:hover {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+section#menu p.copy {
+    text-align: center;
+    color: white;
+}
+
+section#menu p.copy a:link, section#menu p.copy a:default, section#menu p.copy a:visited {
+    text-decoration: none;
+    color: #aaa;
+}
+
+section#menu p.copy a:hover {
+    color: whitesmoke;
+}
+
+/* Footer */
+
+footer {
+    background: whitesmoke;
+    width: 100%;
+    position: absolute;
+    top: 300%;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer a, footer a:default, footer a:link {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #111;
+}
+
+/* Animations */
+
+@keyframes beat {
+    to {
+        transform: scale(1.2);
+    }
+}

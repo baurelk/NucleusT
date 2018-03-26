@@ -1,0 +1,16 @@
+{
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 0,
+    "php.suggest.basic":true,
+    "php.validate.run": "onSave",
+    "php-docblocker.gap": true,
+    "php-docblocker.useShortNames": true,
+    "class-helper.php.property.visibility": "private",
+    "class-helper.ts.method.prefixType": true,
+    "phpGettersSetters.redirect": true,
+    "phpGettersSetters.spacesAfterParam": 2,
+    "editor.multiCursorModifier": "ctrl",
+    "team.showWelcomeMessage": false,
+    
+
+}

@@ -1,0 +1,88 @@
+.content{
+    width: 80%;
+    margin-top: 5em;
+}
+
+.content table{
+    width: 100%;
+    font-size: 1.2em;
+    color: aliceblue;
+    text-align: center;
+    border: none;
+}
+
+body{
+    background-attachment: fixed;
+
+}
+
+.content table caption{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    border-bottom: 1px solid white;
+}
+
+.content table tbody tr{
+  transition: 0.5s;
+  border-radius: 4px; 
+}
+
+.content table tbody tr:hover, .content table tbody tr:hover a{
+    background: rgba(255, 0, 0, 0.445); 
+ }
+
+.content table tbody td{
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.content table tbody td a{
+    margin: 10% 4% 0 2%;
+    padding: 10px;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    background:none;
+    border: solid 1px #333;
+    border-radius: 50px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 13px;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+
+
+div.conent form.blood-form select {
+    background: whitesmoke;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0 5px 0;
+    margin: 10px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    transition: border .1s;
+}
+
+
+div.conent form.blood-form button {
+    margin: 10% 4% 0 2%;
+    padding: 10px;
+    width: 30%;
+    color: #333;
+    background: whitesmoke;
+    border: solid 1px #333;
+    border-radius: 50px;
+    font-family: 'Roboto', 'Arcon', 'Advent Pro', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+div.conent form.blood-form button:hover {
+    background: #D13B3B;
+    color: whitesmoke;
+    border-color: #D13B3B;
+    transition: all .3s;
+}
